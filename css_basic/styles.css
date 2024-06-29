@@ -1,0 +1,41 @@
+header {
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+article {
+    flex: 2;
+    overflow-y: auto;
+    border: solid 1px black;
+    background: black;
+    color: white;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+    border: solid 1px black;
+}
+footer {
+}
+.logo {
+    font-size: 100px;
+}
+@media screen and (max-width: 720px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    article {
+        flex: 1;
+    }
+    aside {
+        flex: 1;
+    }
+}
+
